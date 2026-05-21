@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# 🗡️ Sistema LevelUp - Gamificação de Rotinas
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Expo](https://img.shields.io/badge/Expo-1B1F23?style=for-the-badge&logo=expo&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Status](https://img.shields.io/badge/Status-MVP_Concluído-success)
 
-## Get started
+O **Sistema LevelUp** é um motor de gamificação focado em transformar a disciplina e o autodesenvolvimento do utilizador numa progressão imersiva de RPG. Inspirado no popular manhwa *"Solo Leveling"*, a aplicação converte rotinas diárias em missões reais, recompensando o esforço físico e mental com experiência (XP), evolução de atributos e subida de nível do jogador.
 
-1. Install dependencies
+## ✨ Funcionalidades (MVP)
 
-   ```bash
-   npm install
-   ```
+* **Motor de Status (Player Profile):** Gestão dinâmica de Nível, XP e Barras de HP/MP, com uma interface holográfica em *Dark Mode* e destaques em azul néon.
+* **Sistema de Quests Diárias:** Adição e conclusão de missões associadas a ganhos de atributos específicos (Força, Agilidade, Vitalidade e Inteligência).
+* **Penalty Zone (Missões de Punição):** Registo de "subquests" de alerta para o caso de o utilizador falhar a missão principal.
+* **Cronómetro de Alerta Diário:** Contagem decrescente com efeito néon vermelho sincronizada com a meia-noite (fuso horário local), marcando o prazo limite das missões.
+* **Reatividade e Animações Visuais:** Efeitos visuais de cintilação (Flicker) gerados de forma aleatória, simulando as falhas elétricas de um ecrã holográfico.
 
-2. Start the app
+## 🛠️ Tecnologias Utilizadas
 
-   ```bash
-   npx expo start
-   ```
+* **Front-end Mobile:** Desenvolvido nativamente com React Native e a framework Expo.
+* **Linguagem:** TypeScript / JavaScript.
+* **Estilização e Animações:** Flexbox, Glassmorphism e utilização da biblioteca nativa `Animated` do React Native para luzes néon (TextShadow).
+* **Iconografia:** Fontes de vetores `@expo/vector-icons` (MaterialCommunityIcons e Ionicons).
 
-In the output, you'll find options to open the app in a
+## 📂 Arquitetura do Projeto
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+A estrutura de pastas e ficheiros seguiu os princípios de *Clean Code* e modularização, separando a interface da lógica de estado:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+```text
+📦 Sistema LevelUp
+ ┣ 📂 app
+ ┃ ┗ 📜 index.tsx (Controlador Principal, Motor de XP e Estados)
+ ┣ 📂 componentes
+ ┃ ┣ 📜 TelaStatus.tsx (Interface do Jogador, Grid 2x2 de Atributos e Cronómetro)
+ ┃ ┗ 📜 TelaMissoes.tsx (CRUD de Quests, Filtros Dinâmicos e Validação)
+ ┗ 📂 assets (Imagens de Fundo Holográficas)
+🚀 Como Rodar o Projeto Localmente
+Pré-requisitos: Certifique-se de que tem o Node.js instalado no seu computador e descarregue a aplicação Expo Go no seu telemóvel (iOS/Android).
 
-## Get a fresh project
+Clone o repositório:
 
-When you're ready, run:
+Bash
+git clone [https://github.com/SEU_USUARIO/sistema-levelup.git](https://github.com/SEU_USUARIO/sistema-levelup.git)
+cd sistema-levelup
+Instale as dependências:
 
-```bash
-npm run reset-project
-```
+Bash
+npm install
+Inicie o servidor de desenvolvimento:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Bash
+npx expo start -c
+Execute no Telemóvel: No terminal, irá aparecer um QR Code. Abra a aplicação Expo Go no seu telemóvel, faça a leitura do código e veja o "Sistema" ligar-se no seu ecrã.
