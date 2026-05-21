@@ -34,8 +34,8 @@ A estrutura de pastas e ficheiros seguiu os princípios de *Clean Code* e modula
  ┃ ┣ 📜 TelaStatus.tsx (Interface do Jogador, Grid 2x2 de Atributos e Cronómetro)
  ┃ ┗ 📜 TelaMissoes.tsx (CRUD de Quests, Filtros Dinâmicos e Validação)
  ┗ 📂 assets (Imagens de Fundo Holográficas)
-🚀 Como Rodar o Projeto Localmente
-Pré-requisitos: Certifique-se de que tem o Node.js instalado no seu computador e descarregue a aplicação Expo Go no seu telemóvel (iOS/Android).
+## 🚀 Como Rodar o Projeto Localmente
+* **Pré-requisitos:** Certifique-se de que tem o Node.js instalado no seu computador e descarregue a aplicação Expo Go no seu telemóvel (iOS/Android).
 
 Clone o repositório:
 
