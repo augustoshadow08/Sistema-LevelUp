@@ -2,6 +2,9 @@
 
 O "Sistema LevelUp" é uma aplicação de gamificação em formato de RPG. Atua como uma "agenda" interativa para ajudar a programar o seu dia, transformando tarefas reais em "Quests". Ao cumprir rotinas, ganha XP e evolui atributos, criando motivação para combater a procrastinação.
 
+
+---
+
 📋 Índice
 
 - [Funcionalidades](#-Funcionalidades)
